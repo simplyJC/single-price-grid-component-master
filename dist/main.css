@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link, a:active {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  background: #e5eff5;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-cyan {
+  color: #2ab2af;
+}
+
+.text-bright-yellow {
+  color: #c0df34;
+}
+
+.grid {
+  display: grid;
+}
+
+.main-container {
+  max-width: 310px;
+  margin: 1rem auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: -2px 7px 17px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-section {
+  padding: 1rem;
+  background: white;
+}
+.header-section__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+.header-section__subtitle {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.header-section__content {
+  font-weight: 400;
+  color: #98a6bd;
+  line-height: 1.5rem;
+}
+
+.text-big {
+  font-size: 2rem;
+}
+
+.text-small {
+  padding: 0 1rem;
+  color: #e5eff5;
+}
+
+.section-subscription {
+  background: #2ab2af;
+  padding: 1rem;
+}
+.section-subscription__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.section-subscription__amount {
+  padding: 1rem 0;
+}
+.section-subscription__content {
+  padding: 1rem 0;
+}
+.section-subscription__sign-up-btn {
+  text-decoration: none;
+  border: none;
+  background: #c0df34;
+  color: white;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-radius: 5px;
+}
+
+.section-about-us {
+  background: #3bbab8;
+  padding: 1rem;
+}
+.section-about-us__title {
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 1rem 0;
+  color: #e5eff5;
+}
+
+li {
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+@media (min-width: 700px) {
+  body {
+    display: grid;
+    align-content: center;
+  }
+
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+    min-width: 637px;
+  }
+
+  .header-section {
+    grid-column: span 2;
+    padding: 2rem;
+  }
+
+  .section-subscription {
+    padding: 2rem;
+  }
+
+  .section-about-us {
+    padding: 2rem;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}/*# sourceMappingURL=main.css.map */

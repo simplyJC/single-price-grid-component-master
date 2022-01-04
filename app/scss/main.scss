@@ -1,0 +1,139 @@
+@use 'reset';
+@use 'font';
+@use 'color';
+
+body{
+    font-family: font.$karla;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    background: color.$light-gray;
+    
+
+}
+.text-white{
+    color: white;
+}
+.text-cyan{
+    color:color.$cyan;
+}
+.text-bright-yellow{
+    color:color.$bright-yellow;
+}
+
+
+
+.grid{
+    display: grid;
+}
+.main-container{
+    max-width: 310px;
+    margin: 1rem auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -2px 7px 17px 1px rgba(0,0,0,0.20);
+ 
+}
+.header-section{
+    padding: 1rem;
+    background: white;
+    &__title{
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin: 1rem 0;
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 1rem;
+        margin:1rem 0; 
+    }
+    &__content{
+        font-weight: 400;
+        color: color.$grayish-blue; 
+        line-height: 1.5rem; 
+    }
+
+
+
+}
+.text-big{
+    font-size: 2rem;
+
+
+}
+.text-small{
+    padding: 0 1rem; 
+    color: color.$light-gray; 
+}
+
+
+.section-subscription{
+    background: color.$cyan;
+    padding:1rem; 
+    &__title{
+        font-weight: 700;
+        font-size: 1.3rem;
+        padding:1rem 0; 
+    }
+    &__amount{
+        padding:1rem 0; 
+    }
+    &__content{
+        padding: 1rem 0; 
+    }
+    &__sign-up-btn{
+        text-decoration: none;
+        border: none;
+        background:color.$bright-yellow;
+        color:white;
+        width: 100%;
+        margin:1rem 0; 
+        padding: 1rem 0;
+        border-radius: 5px;
+    }
+    
+}
+.section-about-us{
+    background: hsl(179, 52%, 48%);
+    padding:1rem; 
+    &__title{
+        font-size: 1.3rem;
+        
+    }
+
+}
+ul{
+    list-style:none;
+    padding: 1rem 0; 
+    color: color.$light-gray;
+}
+li{
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+@media (min-width: 700px){
+    
+    body{
+        display: grid;
+        align-content: center;
+    }
+
+    .main-container{
+        grid-template-columns: repeat(2, 1fr);
+        min-width: 637px;
+    }
+    .header-section{
+        grid-column: span 2;
+        padding: 2rem;
+    }
+    .section-subscription{
+        padding: 2rem;
+    }
+    .section-about-us{
+        padding: 2rem;
+    }
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
