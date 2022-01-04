@@ -134,6 +134,15 @@ li {
   .section-subscription {
     padding: 2rem;
   }
+  .section-subscription__title {
+    padding: 0 0 1rem 0;
+  }
+  .section-subscription__sign-up-btn {
+    margin: 1rem 0;
+  }
+  .section-subscription__content {
+    padding: 1.2rem 0;
+  }
 
   .section-about-us {
     padding: 2rem;
